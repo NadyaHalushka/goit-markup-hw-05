@@ -141,6 +141,7 @@ font-weight: 500;
      padding-top: 24px;
     padding-bottom: 24px;
     position: relative;
+    bottom:-3px;
 
 }
 
@@ -450,7 +451,7 @@ justify-content: center;
         align-items: center;
         justify-content: center;
         color: #8E8F99;
-        transition: background-color var(--transition-active);
+        transition: border-color var(--transition-active), fill var(--transition-active);
     }
 
     
@@ -500,6 +501,7 @@ font-size: 16px;
 line-height:1.5;
 display: flex;
 letter-spacing: 0.04em;
+border-radius: 4px;
 color: #4D5AE5;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
@@ -509,7 +511,7 @@ width: 101px;
 height: 48px;
 justify-content: center;
 align-items: center;
- transition: color var(--transition-active);
+transition: color var(--transition-active), background var(--transition-active);
 }
 
 
@@ -518,6 +520,7 @@ align-items: center;
         color: #FFFFFF;
         background:var(--second-btn-color);
         box-shadow:var(--portfolio-btn-box-shadow);
+        border-color: #404BBF;;
     }
 
  /*----------APP----------*/
@@ -587,6 +590,7 @@ row-gap:48px;
 .app-container{
     padding-top: 32px;
     padding-bottom: 32px;
+    padding-left:  16px;
   }
 
   .app-container:hover
@@ -720,10 +724,12 @@ row-gap:48px;
         border-radius: 4px;
         transform: translate(-50%,-50%);
         transition: transform var(--transition-active);
+      
       }
 
       .backdrop.is-hidden .modal{
         transform: translate(-50%,-50%) scaleY(0);
+        
       }
 
       .modal-close-btn{
@@ -736,12 +742,21 @@ row-gap:48px;
         background: #E7E9FC;
         border: 1px solid rgba(0, 0, 0, 0.1);
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-icon{
+      
       }
 
       .modal-close-btn:hover,
       .modal-close-btn:focus
       {
         background: #404BBF;
+        fill:#F4F4FD;
+
       }
 
       .is-hidden {
