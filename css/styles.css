@@ -142,6 +142,7 @@ font-weight: 500;
     padding-bottom: 24px;
     position: relative;
     bottom:-3px;
+    transition: color var(--transition-active);
 
 }
 
@@ -154,8 +155,7 @@ font-weight: 500;
     left: 0%;
     bottom: 0%;
     border-radius: 2px;
-    transition: color var(--transition-active);
-   
+    
 }
 
     .header-link:hover,
@@ -451,7 +451,7 @@ justify-content: center;
         align-items: center;
         justify-content: center;
         color: #8E8F99;
-        transition: border-color var(--transition-active), fill var(--transition-active);
+        transition: border-color var(--transition-active), color var(--transition-active);
     }
 
     
@@ -511,7 +511,7 @@ width: 101px;
 height: 48px;
 justify-content: center;
 align-items: center;
-transition: color var(--transition-active), background var(--transition-active);
+transition: color var(--transition-active), background var(--transition-active), border-color var(--transition-active);
 }
 
 
